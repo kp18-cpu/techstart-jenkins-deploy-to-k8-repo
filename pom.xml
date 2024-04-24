@@ -198,7 +198,7 @@
 							<goal>run</goal>
 						</goals>
 						<configuration>
-							<tasks>
+							<target>
 								<mkdir dir="logs" />
 								<copy file="${basedir}/src/main/resources/messages_en.properties"
 									tofile="${project.build.outputDirectory}/messages.properties" />
@@ -206,7 +206,7 @@
 									tofile="${project.build.outputDirectory}/indexpage.properties" />
 								<delete
 									file="${project.build.outputDirectory}/org/t246osslab/easybuggy/core/utils/DeleteClassWhileMavenBuild.class" />
-							</tasks>
+							</target>
 						</configuration>
 					</execution>
 				</executions>
@@ -303,12 +303,12 @@
 				</executions>
 			</plugin>
 			<!--# Changes for Software Composition Analysis Scan using Snyk
-#By ASecurityGuru
+#By Shikhar Verma
 -->
     <plugin>
       <groupId>io.snyk</groupId>
       <artifactId>snyk-maven-plugin</artifactId>
-      <version>2.0.0</version>
+      <version>2.2.0</version>
       <inherited>false</inherited>
       <configuration>
         <org>asecurityguru</org>
