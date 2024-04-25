@@ -17,7 +17,7 @@ Access to
 -
 
     $ docker build . -t easybuggy:local # Build container image
-    $ docker run -p 8080:8080 easybuggy:local # Start easybuggy
+    $ docker run -p 8080:8080 easybuggy:local # Start Techstart
 
 Access to
 
@@ -29,8 +29,6 @@ Access to
 
 :clock4: For more detail
 -
-   
-See [the wiki page](https://github.com/k-tamura/easybuggy/wiki).
 
 :clock4: Demo
 -
@@ -39,7 +37,7 @@ This demo shows: Start up -> Infinite Loop -> LDAP Injection -> UnsatisfiedLinkE
 
 ![demo](https://github.com/k-tamura/easybuggy/blob/master/demo_eb.gif)
 
-:clock4: EasyBuggy can reproduce:
+:clock4: Techstart can reproduce:
 -
 
 * Troubles
@@ -109,23 +107,3 @@ This demo shows: Start up -> Infinite Loop -> LDAP Injection -> UnsatisfiedLinkE
   * StackOverflowError
   * TransformerFactoryConfigurationError
   * UnsatisfiedLinkError
-
-:clock4: EasyBuggy clones:
--
-* [EasyBuggy Boot](https://github.com/k-tamura/easybuggy4sb)
-
-  EasyBuggy clone build on Spring Boot
-
-  ![logo](https://raw.githubusercontent.com/wiki/k-tamura/easybuggy/images/mov_ebsb.gif)
-
-* [EasyBuggy Bootlin](https://github.com/k-tamura/easybuggy4kt)
-
-  EasyBuggy clone build on Spring Boot and written in Kotlin
-
-  ![logo](https://raw.githubusercontent.com/wiki/k-tamura/easybuggy/images/mov_ebkt.gif)
-
-* [EasyBuggy Django](https://github.com/k-tamura/easybuggy4django)
-
-  EasyBuggy clone build on Django 2 and written in Python
-
-  　![logo](https://github.com/k-tamura/easybuggy4django/blob/master/static/easybuggy.png)
